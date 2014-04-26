@@ -91,7 +91,7 @@ merge_format = workbook.add_format({
 
 
 # Başlık
-worksheet.merge_range('A1:D1', u'Kitap Kaynağı Satış Takip Raporu', merge_format)
+worksheet.merge_range('A1:D1', u'Satış Takip Raporu', merge_format)
 
 # A Sütunu
 worksheet.write('A3', u'AYLAR', cell_format_4)
