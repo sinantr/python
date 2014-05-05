@@ -167,7 +167,7 @@ workbook.close()
 # Execeli Mandrill üzerinden mail atabilmemiz için dosyayı base64’e
 # çevirmemiz gerekiyor. http://tr.wikipedia.org/wiki/Base64
 ######################################################################
-base64.encode(open('%s%s' %(filenameDirectory,filenameReport)), open("out.b64", "w"))
+base64.encode(open('%s%s' %(filenameDirectory,filenameReport)), open('%sout.b64' %(filenameDirectory), "w"))
 
 # Oluşturduğumuz base64 ü açıp content değerine atıyoruz.
 content = open('%sout.b64' %(filenameDirectory)).read()
